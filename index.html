@@ -36,31 +36,74 @@
 <link rel="canonical" href="https://highlandparklights.com" />
 
 <!-- Open Graph -->
-<meta property="og:title" content="Sacred Spur Carriage Company | Highland Park Christmas Carriage Tours">
-<meta property="og:description" content="Private horse-drawn carriage tours through Highland Park's legendary Christmas light displays. Reserve your evening now.">
+<meta property="og:title" content="Highland Park Christmas Carriage Rides | Sacred Spur">
+<meta property="og:description" content="Enjoy private 60-minute Christmas carriage rides through Highland Park, Dallas. Choose a horse-drawn carriage for up to 12 guests with Sacred Spur.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://highlandparklights.com/">
 <meta property="og:locale" content="en_US">
 
-<!-- Structured data for local business / SEO -->
+
+<!-- Sacred Spur business and Highland Park carriage tour structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TouristAttraction",
-  "name": "Sacred Spur Carriage Company",
-  "description": "Upscale horse-drawn carriage tours through the Highland Park Christmas light displays in Dallas, Texas.",
-  "areaServed": ["Highland Park, TX", "University Park, TX", "Park Cities, Dallas TX"],
-  "telephone": "+1-903-790-2693",
-  "priceRange": "From $264",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "4711 Westside Drive",
-    "addressLocality": "Dallas",
-    "addressRegion": "TX",
-    "addressCountry": "US"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://highlandparklights.com/#organization",
+      "name": "Sacred Spur Carriage Company",
+      "url": "https://highlandparklights.com/",
+      "telephone": "+1-903-790-2693",
+      "description": "Horse-drawn carriage company offering private Christmas light tours in Highland Park, Dallas, Texas.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "115 Michel Rd",
+        "addressLocality": "Gladewater",
+        "addressRegion": "TX",
+        "postalCode": "75647",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://highlandparklights.com/#christmas-carriage-rides",
+      "name": "Highland Park Christmas Carriage Rides",
+      "serviceType": "Private horse-drawn Christmas light tours",
+      "url": "https://highlandparklights.com/",
+      "description": "Private 60-minute horse-drawn Christmas carriage rides through Highland Park, Dallas, for groups of up to 12 guests.",
+      "provider": {
+        "@id": "https://highlandparklights.com/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Highland Park, Texas"
+        },
+        {
+          "@type": "Place",
+          "name": "Dallas, Texas"
+        }
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Highland Park Christmas Carriage Tour Pickup",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4711 Westside Dr",
+            "addressLocality": "Dallas",
+            "addressRegion": "TX",
+            "postalCode": "75209",
+            "addressCountry": "US"
+          }
+        }
+      }
+    }
+  ]
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
