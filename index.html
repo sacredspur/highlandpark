@@ -841,6 +841,53 @@
     .hero-ctas{width:100%; flex-direction:column;}
     .hero-ctas .btn{width:100%;}
   }
+  
+<!-- November / December Early Booking Message -->
+
+  .early-booking-notice {
+    max-width: 650px;
+    margin: 24px auto;
+    padding: 20px 24px;
+    background: #fff5de;
+    border: 1px solid #d6b36d;
+    border-radius: 12px;
+    text-align: center;
+    color: #152944;
+    box-shadow: 0 4px 18px rgba(0,0,0,.10);
+  }
+
+  .early-booking-notice .eyebrow {
+    color: #926322;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    margin: 0 0 8px;
+  }
+
+  .early-booking-notice h2 {
+    color: #152944;
+    font-size: clamp(20px, 3vw, 26px);
+    line-height: 1.3;
+    margin: 0 0 10px;
+  }
+
+  .early-booking-notice p {
+    color: #3e4855;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .early-booking-notice {
+      padding: 16px;
+      margin: 20px 0;
+    }
+  }
+
+
+
+
 </style>
 </head>
 <body>
@@ -881,6 +928,22 @@
       <h1>Highland Park<br><em>Christmas Carriage Rides</em></h1>
       <p class="subtitle hero-kicker">Make Christmas a Tradition to Remember</p>
       <p class="subtitle">Experience the magic of Dallas Christmas carriage rides through the breathtaking Highland Park area. Sacred Spur Carriage Company invites you to our premier holiday event featuring an exclusive, 60-minute horse-drawn tour through this legendary display. Whether you are planning a romantic evening, a cherished family holiday tradition, or a festive gathering of friends, our Christmas light tours accommodate up to 12 guests</p>
+     <div class="early-booking-notice">
+  <p class="eyebrow">
+    PLANNING CHRISTMAS IN DALLAS?
+  </p>
+
+  <h2>
+    Reserve Your December Carriage Ride Now
+  </h2>
+
+  <p>
+    December evenings have limited private
+    departures. Choose your preferred date
+    early and make your Christmas plans today.
+  </p>
+</div>
+<!-- End Early Booking Message -->
       <div class="hero-ctas">
         <a href="https://x2-checkout.xola.app/flows/mvp?button=64501fc80d4d0f3dbd657a30" target="_blank" rel="noopener" class="btn btn-book xola-checkout" data-button-id="64501fc80d4d0f3dbd657a30" data-track="book-now" data-placement="hero">Book Your Evening</a>
         <a href="#tours" class="btn btn-outline">View Carriages</a>
